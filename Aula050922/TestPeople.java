@@ -12,9 +12,19 @@ public class TestPeople{
 
         paulinho.imprimeAtributos();
 
-        paulinho.crescer();
+        //paulinho.crescer();
 
         paulinho.imprimeAtributos();
+
+        Car corsa = new Car();
+        corsa.Marca = "Audi";
+        corsa.Modelo = "TT";
+        corsa.Ano = 2022;
+        corsa.Proprietario = paulinho;
+
+        
+
+
 
     }
     
