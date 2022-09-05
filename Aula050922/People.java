@@ -6,7 +6,7 @@ public class People {
     int Idade;
     double Altura;
     String Nacionalidade;
-
+ 
     //Métodos
     void andar(){
 

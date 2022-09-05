@@ -5,7 +5,7 @@ public class Megazord {
     String nome;
     String pega;
     double altura;
-
+ 
     //Metodos
     //Lutar
     void lutar(){
