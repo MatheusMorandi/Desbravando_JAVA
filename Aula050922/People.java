@@ -27,6 +27,14 @@ public class People {
 
     }
 
+    void imprimeAtributos(){
+
+        System.out.println("Nome:"+this.Nome);
+        System.out.println("Idade: "+this.Idade);
+        System.out.println("Altura: "+this.Altura);
+        System.out.println("Nacionalidade: "+this.Nacionalidade);
+
+    }
     
 }
 
