@@ -10,7 +10,11 @@ public class TestPeople{
         paulinho.Nacionalidade = "Brasileiro";
 
 
-        System.out.println("Nome: "+paulinho.Nome);
+        paulinho.imprimeAtributos();
+
+        paulinho.crescer();
+
+        paulinho.imprimeAtributos();
 
     }
     

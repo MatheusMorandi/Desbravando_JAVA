@@ -25,6 +25,8 @@ public class People {
     } 
     void crescer(){
 
+        this.Altura += 0.10;
+
     }
 
     void imprimeAtributos(){
