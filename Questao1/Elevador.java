@@ -9,6 +9,14 @@ public class Elevador{
     int qntPessoa = 0;
 
     //Métodos
+
+    Elevador(int cap, int totAndar){
+
+        this.capacidade = cap;
+        this.totalAndar = totAndar;
+ 
+    }
+
     void entra(){
         if (this.qntPessoa < this.capacidade ){
             this.qntPessoa += 1;
@@ -48,7 +56,4 @@ public class Elevador{
             System.out.println("Não foi possível descer o andar pois ja estamos no térreo.");
         }
     }
-
-
-
 }

@@ -8,49 +8,42 @@ public class Paralelepipedo{
     double profundidade;
 
     //MÉTODOS
-    void volume(){
-        System.out.println("Volume do paralelepipedo = "+(this.altura * this.comprimento * this.profundidade));
-        
+    Paralelepipedo(double altura, double comprimento, double profundidade){
+
+        this.altura = altura;
+        this.comprimento = comprimento;
+        this.profundidade = profundidade;
+
     }
 
-    void atotal(){
-        System.out.println("Area total = "+((this.comprimento * this.altura * 2) + (this.comprimento * this.profundidade * 2) + (this.profundidade * this.altura * 2)));
+    double volume(){
+                
+        return (this.altura * this.comprimento * this.profundidade);
     }
 
-    void area(int face){
-        if (face == 1){
-            System.out.println("Area da face "+ face +" = "+(this.comprimento * this.altura));
+    double atotal(){
+
+        return (this.comprimento * this.altura * 2) + (this.comprimento * this.profundidade * 2) + (this.profundidade * this.altura * 2);
+    }
+
+    double area(int face){
+        if (face == 1 || face == 4){
+            return (this.comprimento * this.altura);
         }
         else{
-            if (face == 2){
-                System.out.println("Area da face "+ face +" = "+(this.comprimento * this.altura));
+            if (face == 2 || face == 5){
+                return (this.comprimento * this.altura);
             }
             else{
-                if (face == 3){
-                    System.out.println("Area da face "+ face +" = "+(this.comprimento * this.profundidade));
+                if (face == 3 || face == 6){
+                    return(this.comprimento * this.profundidade);
                 }
+                
                 else{
-                    if (face ==4){
-                        System.out.println("Area da face "+ face +" = "+(this.comprimento * this.profundidade));
-                    }
-                    else{
-                        if (face ==5){
-                            System.out.println("Area da face "+ face +" = "+(this.profundidade * this.altura));
-                        }
-                        else{
-                            if (face ==6){
-                                System.out.println("Area da face "+ face +" = "+(this.profundidade * this.altura));
-                            }
-                            else{
-                                System.out.println("NÃO POSSUI ESTA FACE");
-                            }
-                        }
+                    System.out.println("NÃO POSSUI ESTA FACE");
+                    return 0;
                     }
                 }
-
-            }
-
-        }
-
-    }
+     }
+}
 }
