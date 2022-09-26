@@ -4,9 +4,9 @@ public class ParalelepipedoTeste {
     public static void main (String args[]){
         Paralelepipedo a = new Paralelepipedo(1,2,3);
 
-        a.area(7);
-        a.volume();
-        a.atotal();
+        System.out.println("Area da face 6 = " + a.area(6));
+        System.out.println(a.volume());
+        System.out.println(a.atotal());
 
 
         
