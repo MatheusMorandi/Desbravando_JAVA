@@ -25,5 +25,5 @@ public class ObjetStringTest {
         System.out.println(rep.retornaObjeto());
 
     }
-    
+
 }
